@@ -33,8 +33,7 @@ def register(request):
       return redirect('login')
     messages.error(request, 'Passwords do not match')
     return redirect('register')
-  else:
-    return render(request, 'accounts/register.html')
+  return render(request, 'accounts/register.html')
 
 def login(request):
   if request.method == 'POST':
