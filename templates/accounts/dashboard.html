@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %} | User Dashboard {% endblock %}
+{% block title %}
+  | User Dashboard
+{% endblock %}
 
 {% block content %}
-<section id="showcase-inner" class="py-5 text-white">
+  <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
@@ -20,10 +22,9 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="{% url 'index' %}">
-              <i class="fas fa-home"></i> Home</a>
+            <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
           </li>
-          <li class="breadcrumb-item active"> Dashboard</li>
+          <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
     </div>
@@ -66,4 +67,4 @@
       </div>
     </div>
   </section>
-  {% endblock %}
+{% endblock %}
